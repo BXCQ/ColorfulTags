@@ -1,0 +1,72 @@
+/* 彩色标签云基本样式 */
+#tag_cloud .tags a,
+.widget_tag_cloud .tags a,
+div.tags.l-h-2x.panel.wrapper-sm.padder-v-ssm a,
+.tags a.label.badge {
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 3px 8px;
+    margin: 3px;
+    border: 0;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    background-color: var(--tagColor, #263238) !important;
+}
+
+/* 标签悬停效果 */
+#tag_cloud .tags a:hover,
+.widget_tag_cloud .tags a:hover,
+div.tags.l-h-2x.panel.wrapper-sm.padder-v-ssm a:hover,
+.tags a.label.badge:hover {
+    transform: translateY(-2px) scale(1.05) !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
+    filter: brightness(1.1);
+    z-index: 9999 !important;
+}
+
+/* 确保标签内容可见 */
+#tag_cloud .tags a:empty,
+.widget_tag_cloud .tags a:empty,
+div.tags.l-h-2x.panel.wrapper-sm.padder-v-ssm a:empty {
+    display: none;
+}
+
+/* 移动端优化 */
+@media (max-width: 767px) {
+    #tag_cloud .tags a,
+    .widget_tag_cloud .tags a,
+    div.tags.l-h-2x.panel.wrapper-sm.padder-v-ssm a {
+        padding: 2px 6px;
+        font-size: 90%;
+    }
+}
+
+/* Handsome主题特定样式 */
+div.tags.l-h-2x.panel.wrapper-sm.padder-v-ssm {
+    position: relative !important;
+    height: auto !important;
+    /*min-height: 300px !important;*/
+    overflow: visible !important;
+    padding-top: 0 !important;
+}
+
+/* 确保标签不会被遮挡 */
+#tag_cloud .tags,
+.widget_tag_cloud .tags,
+div.tags.l-h-2x.panel.wrapper-sm.padder-v-ssm {
+    z-index: 10;
+}
+
+/* 确保标签可点击 */
+#tag_cloud .tags a,
+.widget_tag_cloud .tags a,
+div.tags.l-h-2x.panel.wrapper-sm.padder-v-ssm a {
+    pointer-events: auto !important;
+}
