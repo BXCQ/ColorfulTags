@@ -1,4 +1,4 @@
-﻿# ColorfulTags
+# ColorfulTags
 
 基于SVG技术的彩色3D标签云插件，专为Typecho博客Handsome主题打造，提供真实的3D旋转效果和绚丽的标签展示。
 
@@ -17,7 +17,7 @@
 
 ## 安装方法
 
-1. **下载插件**：从[GitHub仓库](https://github.com/BXCQ/3DColorfulTags)下载最新版本
+1. **下载插件**：从[GitHub仓库](https://github.com/BXCQ/ColorfulTags)下载最新版本
 2. **解压重命名**：将解压后的文件夹重命名为`ColorfulTags`
 3. **上传到服务器**：将文件夹上传到网站的`/usr/plugins/`目录下
 4. **后台启用**：进入Typecho后台 → 插件管理 → 找到「ColorfulTags」→ 启用插件
