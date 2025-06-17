@@ -1,6 +1,6 @@
 <?php
 /**
- * <a href='https://github.com/BXCQ/ColorfulTags' title='项目主页' target='_blank'>3D彩色标签云插件</a>
+ * <a href='https://blog.ybyq.wang/archives/607.html' title='项目介绍主页' target='_blank'>3D彩色标签云插件</a>
  * 适配Handsome主题及自定义样式
  *
  * @package ColorfulTags
@@ -115,11 +115,11 @@ class ColorfulTags_Plugin implements Typecho_Plugin_Interface
 			if (!$is_3d) {
 				// 不启用3D效果时的输出
 				$html = <<<html
-<!-- Start 3DColorfulTags -->
+<!-- Start ColorfulTags -->
 <link rel="stylesheet" type="text/css" href="{$static_src}/css/colorfultags.min.css">
 <script src="{$static_src}/js/colorfultags.min.js"></script>
 <script id="colorfultags">
-console.info("%c彩色标签云 - SVG版 | https://github.com/BXCQ/3DColorfulTags","line-height:28px;padding:4px;background:#3f51b5;color:#fff;font-size:14px;font-family:Microsoft YaHei;");
+console.info("%c彩色标签云 - SVG版 | https://github.com/BXCQ/ColorfulTags", "padding: 8px 15px; font-family: 'Microsoft YaHei', sans-serif; font-size: 14px; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.2); border-radius: 5px; background: linear-gradient(to right, #a0c4ff, #ffc6c6);");
 // 设置颜色变量
 var colorfulTagsColors = {$colorVariable};
 
@@ -142,18 +142,18 @@ $(document).on("pjax:complete", function() {
     }
 });
 </script>
-<!-- End 3DColorfulTags -->
+<!-- End ColorfulTags -->
 html;
 			} else {
 				// 启用3D效果时的输出
 				$html = <<<html
-<!-- Start 3DColorfulTags -->
+<!-- Start ColorfulTags -->
 <link rel="stylesheet" type="text/css" href="{$static_src}/css/colorfultags.min.css">
 <link rel="stylesheet" type="text/css" href="{$static_src}/css/around3d.min.css">
 <script src="{$static_src}/js/colorfultags.min.js"></script>
 <script src="{$static_src}/js/svg3dtagcloud.min.js"></script>
 <script id="colorfultags">
-console.info("%c彩色标签云 - SVG版 | https://github.com/BXCQ/3DColorfulTags","line-height:28px;padding:4px;background:#3f51b5;color:#fff;font-size:14px;font-family:Microsoft YaHei;");
+console.info("%c3D彩色标签云 v3.0.1 | https://blog.ybyq.wang ", "padding: 8px 15px; font-family: 'Microsoft YaHei', sans-serif; font-size: 14px; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.2); border-radius: 5px; background: linear-gradient(to right, #a0c4ff, #ffc6c6);");
 // 设置颜色变量
 var colorfulTagsColors = {$colorVariable};
 
@@ -279,7 +279,7 @@ document.addEventListener('visibilitychange', function() {
     }
 });
 </script>
-<!-- End 3DColorfulTags -->
+<!-- End ColorfulTags -->
 html;
 			}
 		} else {
@@ -287,11 +287,11 @@ html;
 			if (!$is_3d) {
 				// 不启用3D效果时的输出
 				$html = <<<html
-<!-- Start 3DColorfulTags -->
+<!-- Start ColorfulTags -->
 <link rel="stylesheet" type="text/css" href="{$static_src}/css/colorfultags.min.css">
 <script src="{$static_src}/js/colorfultags.min.js"></script>
 <script>
-console.info("%c彩色标签云 - SVG版 | https://github.com/BXCQ/3DColorfulTags","line-height:28px;padding:4px;background:#3f51b5;color:#fff;font-size:14px;font-family:Microsoft YaHei;");
+console.info("%c彩色标签云 - SVG版 | https://github.com/BXCQ/ColorfulTags", "padding: 8px 15px; font-family: 'Microsoft YaHei', sans-serif; font-size: 14px; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.2); border-radius: 5px; background: linear-gradient(to right, #a0c4ff, #ffc6c6);");
 // 设置颜色变量
 var colorfulTagsColors = {$colorVariable};
 
@@ -316,18 +316,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
 });
 </script>
-<!-- End 3DColorfulTags -->
+<!-- End ColorfulTags -->
 html;
 			} else {
 				// 启用3D效果时的输出
 				$html = <<<html
-<!-- Start 3DColorfulTags -->
+<!-- Start ColorfulTags -->
 <link rel="stylesheet" type="text/css" href="{$static_src}/css/colorfultags.min.css">
 <link rel="stylesheet" type="text/css" href="{$static_src}/css/around3d.min.css">
 <script src="{$static_src}/js/colorfultags.min.js"></script>
 <script src="{$static_src}/js/svg3dtagcloud.min.js"></script>
 <script>
-console.info("%c彩色标签云 - SVG版 | https://github.com/BXCQ/3DColorfulTags","line-height:28px;padding:4px;background:#3f51b5;color:#fff;font-size:14px;font-family:Microsoft YaHei;");
+console.info("%c彩色标签云 - SVG版 | https://github.com/BXCQ/ColorfulTags", "padding: 8px 15px; font-family: 'Microsoft YaHei', sans-serif; font-size: 14px; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.2); border-radius: 5px; background: linear-gradient(to right, #a0c4ff, #ffc6c6);");
 // 设置颜色变量
 var colorfulTagsColors = {$colorVariable};
 
@@ -444,7 +444,7 @@ document.addEventListener('visibilitychange', function() {
     }
 });
 </script>
-<!-- End 3DColorfulTags -->
+<!-- End ColorfulTags -->
 html;
 			}
 		}
