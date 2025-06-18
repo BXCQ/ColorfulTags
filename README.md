@@ -91,11 +91,13 @@
 
 ## 关于作者
 
-插件由璇([blog.ybyq.wang](https://blog.ybyq.wang))开发，如有问题或建议，欢迎在GitHub仓库提交issue或PR。
+插件由璇([blog.ybyq.wang](https://blog.ybyq.wang))二次开发，如有问题或建议，欢迎在GitHub仓库提交issue或PR。
+原作者仓库：https://gitee.com/invelop/Typecho-ColorfulTags-For-Handsome
 
 ## 许可协议
 
 本插件采用MIT许可协议开源，您可以自由使用、修改和分发，但请保留原作者信息。
+
 
 ## 与自定义CSS/JS配合使用
 
